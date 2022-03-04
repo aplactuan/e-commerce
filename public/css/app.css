@@ -608,6 +608,9 @@ select {
 .z-50 {
   z-index: 50;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -627,6 +630,9 @@ select {
 .mt-3 {
   margin-top: 0.75rem;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .ml-4 {
   margin-left: 1rem;
 }
@@ -644,9 +650,6 @@ select {
 }
 .mt-6 {
   margin-top: 1.5rem;
-}
-.mt-2 {
-  margin-top: 0.5rem;
 }
 .block {
   display: block;
@@ -745,6 +748,9 @@ select {
 .list-disc {
   list-style-type: disc;
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -775,6 +781,11 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden {
   overflow: hidden;
