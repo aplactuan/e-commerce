@@ -3,8 +3,6 @@
         {{ Str::title($variations->first()?->type) }}
     </div>
 
-    {{ $selectedVariation }}
-
     <x-select class="w-full" wire:model="selectedVariation">
         <option value="">Choose an option</option>
 

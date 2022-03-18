@@ -15,4 +15,9 @@ class Variation extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function formattedPrice()
+    {
+        return money($this->price);
+    }
 }
